@@ -18,6 +18,7 @@ public class PickableItem : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        WeaponBag.instance.AddItem(items);
         Destroy(this.gameObject);
 
     }
